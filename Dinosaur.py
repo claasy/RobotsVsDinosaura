@@ -5,9 +5,6 @@ class Dinosaur:
         self.health = 100
 
     def set_name(self):
-        self.name=""
+        self.name=input("Please enter a dinosaur name: ")
     def attack(self):
         self.attack_power
-    def health(self):
-        self.health = 100
-        

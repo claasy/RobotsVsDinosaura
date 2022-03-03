@@ -5,16 +5,13 @@ class Robot:
     def __init__ (self):
         self.name = ""
         self.health: int
-        self.weapon: Weapon
+        self.weapon: Weapon()
     
     def set_name(self):
-        self.name = ""
+        self.name = input("Please enter a robot name: ")
         print ("Robot name:", self.name)
-    def Weapon(self):
-        self.weapon = 100
-    def health(self):
-        self.health: 100
-        
+    
+
 
     
    
