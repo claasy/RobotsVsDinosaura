@@ -1,10 +1,13 @@
 class Dinosaur:
-    def __init__ (self):
-        self.name = ""
-        self.attack_power = 100
+    def __init__ (self, name):
+        self.name = name
+        self.attack_power = 50
         self.health = 100
 
-    def set_name(self):
-        self.name=input("Please enter a dinosaur name: ")
+
     def attack(self):
         self.attack_power
+
+
+    def attack(self, robot):
+        robot.health -= self.attack_power

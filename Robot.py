@@ -2,17 +2,15 @@ from Weapon import Weapon
 
 
 class Robot:
-    def __init__ (self):
-        self.name = ""
-        self.health: 100
-        self.weapon: Weapon()
-    
-    def set_name(self):
-        self.name = input("Please enter a robot name: ")
-        print ("Robot name:", self.name)
+    def __init__ (self, name):
+        self.name = name
+        self.health = 100
+        self.weapon = Weapon()
 
-    def attack(self):
-        self.weapon
+
+    def attack(self, dinosaur):
+        dinosaur.health -= self.weapon.attack_power
+        
     
 
 

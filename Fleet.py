@@ -2,23 +2,17 @@ from Robot import Robot
 
 class Fleet:
     def __init__ (self):
-        pass
+        self.robots = []
+        self.create_fleet()
 
-robot_one= Robot()
-robot_one.set_name()
-robot_one.health()
-robot_one.weapon()
-robot_one.attack()
+    def create_fleet(self):
+        robot_one=Robot("Alan")
+        self.robots.append(robot_one)
+        robot_two=Robot("Bob")
+        self.robots.append(robot_two)
+        robot_three=Robot("Charlie")
+        self.robots.append(robot_three)
 
 
-robot_two= Robot()
-robot_two.set_name()
-robot_two.health()
-robot_two.weapon()
-robot_two.attack()
 
-robot_three= Robot()
-robot_three.set_name()
-robot_three.health()
-robot_three.weapon()
-robot_three.attack()
+    
