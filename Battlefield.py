@@ -8,8 +8,15 @@ class Battlefield:
         self.herd = Herd()
         pass
 
-    def run(self):
-        pass
+    def fight(self): 
+        self.herd.dinosaurs[0].attack(self.fleet.robots[0])
+        self.fleet.robots[0].attack(self.herd.dinosaurs[0])
+        
+        # after an attack, if one getting attacked has 0 health, remove them from their list.
+        # continue looping as long as both lists have at least one thing in it
 
-    #self.fleet[0].attack(self.herd[0])
-    #self.herd[0].attack(self.fleet[0])
+        #who goes first? I want dinosaurs to go first
+        for health in :
+            if health == 0:
+                print("The game is over, the dinosaurs have won!")
+                pass
